@@ -10,7 +10,7 @@ void led_turn_off(uint32_t led)
 	nrf_gpio_pin_write(led, 1);
 }
 
-bool button_status(uint32_t button)
+bool button_pressed(uint32_t button)
 {
 	return nrf_gpio_pin_read(button);
 }
