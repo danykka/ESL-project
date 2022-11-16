@@ -9,6 +9,6 @@ void led_turn_on(uint32_t led);
 
 void led_turn_off(uint32_t led);
 
-bool button_status(uint32_t button);
+bool button_pressed(uint32_t button);
 
 #endif
