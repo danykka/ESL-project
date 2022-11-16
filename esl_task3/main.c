@@ -10,7 +10,7 @@ int main()
 	all_leds_off();
 	while(true) {
 		for(uint32_t i = 0; i < NRFX_ARRAY_SIZE(sequence); i++) {
-			if(button_status(BUTTON)) {
+			if(button_pressed(BUTTON)) {
 				led_turn_on(sequence[i]);
 				nrf_delay_ms(300);
 				led_turn_off(sequence[i]);
